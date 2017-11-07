@@ -152,3 +152,98 @@ transform: skewX(20deg);
   right: 15px;
   text-align: center;
 }
+
+.backend-wrapper {
+  position: relative;
+}
+
+.backend-wrapper > .backend-project {
+  height: 100%;
+  width: 100%;
+  display:block;
+}
+
+.backend-wrapper:hover .backend-project-title{
+  opacity: 0.8;
+}
+
+.backend-wrapper .backend-project-title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+  /*background: url("../img/AskQuestions.PNG");*/
+}
+
+.title-text {
+  position: absolute;
+  /*font-size: 5em;*/
+  top: 30%;
+  left: 25%;
+}
+
+.learn-more {
+  border: 2px solid red;
+  top: 60%;
+  left: 45%;
+  position: absolute;
+  padding: 10px 10px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 411px) {
+  .title-text {
+    font-size: 1.75em;
+  }
+  .learn-more {
+    line-height: 1em
+    left: 30%;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 450px) {
+  .title-text {
+    font-size: 3em;
+    left: 20%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .title-text {
+    font-size: 3.2em;
+    left: 25%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 742px) { 
+  .title-text {
+    font-size: 4em;
+    left: 26%;
+  }
+}
+
+/*@media (min-width: 742px) { 
+  .title-text {
+    font-size: 3.5em;
+  }
+}*/
+
+@media (min-width: 900px) { 
+  .title-text {
+    font-size: 5em;
+    left: 23%;
+  }
+    .learn-more {
+    line-height: 3em
+    left: 40%;
+  }
+
+}
