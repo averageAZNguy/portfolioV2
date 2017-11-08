@@ -163,10 +163,6 @@ transform: skewX(20deg);
   display:block;
 }
 
-.backend-wrapper:hover .backend-project-title{
-  opacity: 0.8;
-}
-
 .backend-wrapper .backend-project-title {
   position: absolute;
   top: 0;
@@ -184,16 +180,33 @@ transform: skewX(20deg);
 .title-text {
   position: absolute;
   /*font-size: 5em;*/
-  top: 30%;
+  top: 20%;
   left: 25%;
+  transition: 0.3s;
 }
 
 .learn-more {
   border: 2px solid red;
-  top: 60%;
+  top: 70%;
   left: 45%;
   position: absolute;
   padding: 10px 10px;
+  transition: 0.3s;
+}
+
+.backend-wrapper:hover .backend-project-title{
+  opacity: 1;
+  transition: 1s;
+}
+
+.backend-wrapper:hover .title-text {
+  top: 30%;
+  transition: ease 1s;
+}
+
+.backend-wrapper:hover .learn-more {
+  top: 60%;
+  transition: ease 1s;
 }
 
 /* Small devices (landscape phones, 576px and up) */
