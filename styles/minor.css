@@ -256,7 +256,7 @@ transform: skewX(20deg);
 
 @media (min-width: 900px) { 
   .title-text {
-    font-size: 4em;
+    font-size: 3em;
     left: 23%;
   }
     .learn-more {
