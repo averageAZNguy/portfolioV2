@@ -219,9 +219,16 @@ transform: skewX(20deg);
   .title-text {
     font-size: 1.75em;
   }
+  .title-text-addon {
+    font-size: 0.75em;
+  }
   .learn-more {
     line-height: 1em
     left: 30%;
+  }
+  .learn-more-addon {
+    line-height: 0.75em
+    left: 10%;
   }
 }
 /* Small devices (landscape phones, 576px and up) */
@@ -259,6 +266,7 @@ transform: skewX(20deg);
     font-size: 3em;
     left: 23%;
   }
+
     .learn-more {
     line-height: 3em
     left: 40%;
